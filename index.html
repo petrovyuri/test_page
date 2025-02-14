@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Telegram Resources 🌐</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2D8CFF;
+            --bg: #f8f9fa;
+            --text: #2c3e50;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            line-height: 1.6;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary), #6c5ce7);
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.2s;
+        }
+
+        .section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .channel-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .channel-card:hover {
+            background: #f8f9ff;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            background: #e8f3ff;
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .channel-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📱 Flutter Telegram Resources</h1>
+            <p>Лучшие каналы и чаты для разработчиков</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Русские каналы -->
+        <section class="section">
+            <h2><i class="fas fa-comment-dots"></i> Русскоязычные каналы</h2>
+            <div class="channel-card">
+                <a href="https://t.me/mobile_developing">Мобильный разработчик</a>
+                <span class="badge">Flutter • Dart • Mobile</span>
+            </div>
+            <!-- Добавьте остальные каналы аналогично -->
+        </section>
+
+        <!-- Английские каналы -->
+        <section class="section">
+            <h2><i class="fas fa-globe"></i> English Channels</h2>
+            <div class="channel-card">
+                <a href="https://t.me/flutterDev">Flutter Heroes</a>
+                <span class="badge">News • Tutorials</span>
+            </div>
+        </section>
+
+        <!-- Чат-секция -->
+        <section class="section">
+            <h2><i class="fas fa-comments"></i> Чаты</h2>
+            <div class="channel-card">
+                <a href="https://t.me/dev_hut">Хижина программиста</a>
+                <span class="badge">Обсуждения • Помощь</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
